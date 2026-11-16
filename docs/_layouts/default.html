@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'zh-Hant' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.url != "/" %}{{ page.title }}｜{% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="theme-color" content="#0D0A0D">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body class="page-{{ page.type | default: 'page' }}">
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">BLACKPINK <span>ARCHIVE</span></a>
+      <nav class="site-nav" aria-label="主要導覽">
+        <ul>
+          <li><a href="{{ '/members/' | relative_url }}"{% if page.url contains '/members/' %} aria-current="page"{% endif %}>成員</a></li>
+          <li><a href="{{ '/discography/' | relative_url }}"{% if page.url contains '/discography/' %} aria-current="page"{% endif %}>音樂作品</a></li>
+          <li><a href="{{ '/timeline/' | relative_url }}"{% if page.url == '/timeline/' %} aria-current="page"{% endif %}>年表</a></li>
+          <li><a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>關於</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    {% if page.type == "member" or page.type == "release" %}
+    <article class="wrap detail">
+      {{ content }}
+    </article>
+    {% elsif page.full_width %}
+    {{ content }}
+    {% else %}
+    <div class="wrap prose">
+      {{ content }}
+    </div>
+    {% endif %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>本網站為非官方粉絲作品，與 BLACKPINK 及其相關公司無隸屬關係。</p>
+      <p>資料以 YG Entertainment 官方頁面為準，來源與圖片說明請見<a href="{{ '/about/' | relative_url }}">關於本站</a>。</p>
+    </div>
+  </footer>
+</body>
+</html>

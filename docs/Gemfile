@@ -1,0 +1,4 @@
+# 只供本機預覽用。GitHub Pages 會自行建置，不需要這個檔案也能部署。
+source "https://rubygems.org"
+gem "github-pages", group: :jekyll_plugins
+gem "webrick"

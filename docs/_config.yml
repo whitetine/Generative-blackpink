@@ -1,0 +1,23 @@
+title: BLACKPINK ARCHIVE
+description: 從四位成員與代表作品，認識 BLACKPINK。
+lang: zh-Hant
+
+# 部署到 https://<帳號>.github.io/<儲存庫>/ 時，把 baseurl 改成 "/<儲存庫>"。
+# 例：儲存庫叫 blackpink-archive，就填 "/blackpink-archive"。
+# 若之後改用自訂網域或 <帳號>.github.io 儲存庫，保留空字串。
+baseurl: "/Generative-blackpink"
+url: "https://whitetine.github.io"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
