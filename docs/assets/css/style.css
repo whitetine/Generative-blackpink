@@ -505,3 +505,46 @@ code {
   .timeline li { grid-template-columns: 1fr; }
   .header-inner { justify-content: flex-start; }
 }
+
+/* ---------- Photos ---------- */
+
+.member-hero {
+  display: grid;
+  grid-template-columns: minmax(14rem, 22rem) 1fr;
+  gap: 2rem;
+  align-items: end;
+  margin-top: 1rem;
+}
+.member-hero-text h1 { margin-top: 0; }
+.member-hero .facts { grid-template-columns: 1fr; margin-bottom: 0; }
+
+figure { margin: 0; }
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+figcaption {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+figcaption a { color: var(--muted); }
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1.25rem;
+  max-width: 52rem;
+}
+
+.credit-list { padding-left: 1.2rem; }
+
+@media (max-width: 720px) {
+  .member-hero { grid-template-columns: 1fr; }
+  .member-photo { max-width: 22rem; }
+}

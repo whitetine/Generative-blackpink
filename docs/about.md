@@ -29,7 +29,15 @@ BLACKPINK ARCHIVE 是一個繁體中文的入門網站，寫給第一次認識 B
 
 ## 圖片與素材
 
-站內的光束、漸層與作品卡都是原創的 CSS 圖形，沒有使用團體照、專輯封面或官網圖片。之後若加入這類素材，會先確認可以公開使用，並在這裡註明授權與署名。
+站內的光束、漸層與作品卡都是原創的 CSS 圖形。專輯封面、官方宣傳照與授權不明的圖片不會放上本站。
+
+成員照片只使用允許公開再利用的圖片，並在照片旁與下表註明署名：
+
+<ul class="credit-list">
+{% for c in site.data.credits %}
+  <li><a href="{{ c.used_on | relative_url }}">{{ c.subject }}</a>：{{ c.author }}，<a href="{{ c.license_url }}">{{ c.license }}</a>，<a href="{{ c.source_url }}">via Wikimedia Commons</a></li>
+{% endfor %}
+</ul>
 
 MV 一律連到官方 YouTube，不在站內嵌入或自動播放。
 

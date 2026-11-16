@@ -1,0 +1,25 @@
+# 圖片授權與署名清單。新增照片時在這裡登記，關於頁會自動列出。
+- file: /assets/img/jennie/jennie-commons-04.jpg
+  subject: JENNIE 活動照
+  author: K-POPIT 케이팝잇
+  license: CC BY 3.0
+  license_url: https://creativecommons.org/licenses/by/3.0
+  source_url: https://commons.wikimedia.org/wiki/File:Kim_Jennie_(%EA%B9%80%EC%A0%9C%EB%8B%88)_04.jpg
+  checked: 2026-11-16
+  used_on: /members/jennie/
+- file: /assets/img/jennie/jennie-chanel-coco-crush-2024.jpg
+  subject: JENNIE 出席 CHANEL Coco Crush 活動（2024-07-03）
+  author: 티비텐
+  license: CC BY 3.0
+  license_url: https://creativecommons.org/licenses/by/3.0
+  source_url: https://commons.wikimedia.org/wiki/File:Blackpink%27s_Jennie_in_Chanel_Coco_Crush,_July_3,_2024_(1).png
+  checked: 2026-11-16
+  used_on: /members/jennie/
+- file: /assets/img/jennie/jennie-chanel-photo-call-2026.jpg
+  subject: JENNIE 出席 CHANEL 拍照活動（2026-05-26）
+  author: K-POPIT 케이팝잇
+  license: CC BY 4.0
+  license_url: https://creativecommons.org/licenses/by/4.0
+  source_url: https://commons.wikimedia.org/wiki/File:26052026_BLACKPINK_JENNIE_CHANEL_Photo_Call_2.png
+  checked: 2026-11-16
+  used_on: /members/jennie/
